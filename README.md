@@ -11,8 +11,9 @@ Only Mode 3 seems to work correctly, with both AM directions.
 
 Graphics drawing works with all 4 rotation directions, using Adafruit_SPITFT.
 Bitmaps drawing, e.g. for canvas, using pushColors, works only correctly for rotation 0 and 3.
-Bitmaps drawing, e.g. for canvas, using Adafruit_SPITFT::drawRGBBitmap works with all 4 rotation directions.
-For (future) optimized SSD1283A_SPITFT::drawRGBBitmap this needs further investigation.
+Bitmaps drawing, e.g. for canvas, using Adafruit_SPITFT::drawRGBBitmap also works only correctly for rotation 0 and 3.
+(The leftmost column is missing, but show as rightmost column).
+Use rotation for drawing to the canvas, but use rotation 0 or 3 for pushing the canvas to screen.
 
 ### Version 0.0.1
 - preliminary version
